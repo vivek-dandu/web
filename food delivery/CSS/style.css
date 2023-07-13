@@ -1,0 +1,243 @@
+/* CSS Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variables */
+:root{
+    --navbar-height: 60px;
+}
+
+/* Navigation Bar */
+#navbar{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    opacity: 0.5;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 30px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    /* font-size: 10px; */
+}
+
+#navbar ul li a{
+    display: block;
+    color: white;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    height: 410px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url("../img/bg4.jpg") no-repeat center center/cover;
+    opacity: 0.8;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 70%;
+    width: 100%;
+    z-index: -1;
+}
+#home h1{
+    color: white;
+    text-align: left;
+    font-size: 3rem;
+}
+
+#home p{
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Bree Serif';
+    width: 500px;
+}
+
+.btn{
+    color: white;
+    background-color: black;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: black;
+    background-color: white;
+    border:2px solid black;
+}
+
+/* Services */
+#services{
+    display: flex;
+    margin: 10px;
+}
+#services .box{
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(231, 222, 222);
+}
+#services .box img{
+    display: block;
+    margin: auto;
+    height: 150px;
+    border-radius: 10px;
+}
+#services .box p{
+    padding: 10px;
+}
+
+/* Contact Us*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+    background: url("../img/contactus_bg.jpg") no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 10px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.2rem;
+}
+
+/* Footer */
+#footer-section{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(189, 232, 232);
+}
+#footer-section p{
+    font-size: 1rem;
+}
+#footer-section img{
+    margin: 0px 10px;
+    height: 30px;
+}
+
+/* Utility classes */
+.center{
+    text-align: center;
+    align-items: center;
+}
+.h-primary{
+    font-size: 3rem;
+    padding: 10px;
+}
+.h-secondary{
+    font-size: 2rem;
+    padding: 10px;
+}
+/* Login*/
+#login-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+#login-box input,
+#login-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 10px;
+}
+#login-box form{
+    width: 40%;
+}
+#login-box label{
+    font-size: 1.2rem;
+}
+.login_form-group input{
+    background-color: aqua;
+    margin: 10;
+}
+
+#home1 li a{
+    color: black;
+    padding: 3px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+#home1 li a:hover{
+    color: white;
+    background-color: black;
+}
+#t{
+    display: flex;
+    font-size: 20px;
+}
+#t a{
+    color: black;
+    text-decoration: none;
+}
+#t a:hover{
+    color: orange;
+}

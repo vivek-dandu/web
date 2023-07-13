@@ -1,0 +1,26 @@
+/* Navigation Section */
+#navbar{
+    flex-direction: column;
+}
+
+#navbar ul{}
+
+/* Home */
+
+#home{
+    height: 400px;
+}
+#home::before{
+    height: 500px;
+}
+#home p{
+    font-size: 10px;
+}
+
+/* Services */
+#services{
+    flex-direction: column;
+}
+/* Contact Section */
+
+#contact{}
