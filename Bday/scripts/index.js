@@ -7,7 +7,7 @@ const config = {
   birthdate: 'Jul 19, 2023',
   name: 'NAME'
 };
-
+ 
 function hideEverything() {
   head.style.display = 'none';
   count.style.display = 'none';
